@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejecutando código python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pyscript.net/releases/pyscript.css">
+    <script src="https://pyscript.net/releases/pyscript.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script src="/JavaScript/funciones.js"></script> -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <p id="texto">Humanos, Jedi, Sith, Clones e innumerables criaturas de los planetas más diversos de la galaxia.
+        Así es el increíble universo de Star Wars, creado por George Lucas,
+        cuya franquicia completa está disponible en Disney+. </p>
+    <br>
+    <p id="texto">Pero, ¿alguna vez te has preguntado qué personaje de Star Wars eres? ¡Haz nuestra prueba y descúbrelo
+        ahora
+        mismo! </p>
+    <br>
+    <img src="{{ url_for('static', filename='Recursos/starwars.jpeg') }}" alt="Principal"
+        style="width:50%; height:auto;">
+    <p id="texto">Referencias:</p> <br>
+    <a href="https://www.disneylatino.com/novedades/que-personaje-de-star-wars-eres-segun-tu-personalidad">Enlace
+        Disney</a>
+    </p>
+
+    <!-- Formulario -->
+    <form action="formuarioPreguntas" method="post" id="formularioPreguntas">
+        <div class="wrapper">
+            <button type="submit" value="enviar" class="btnComenzar">Comenzar!!
+                <!-- etiquetas para los estilos del botón -->
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </form>
+
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <div id="respuesta">
+
+            </div>
+        </div>
+    </div>
+
+    {% if formulario_list is not none %}
+    <label>{{ formulario_list }}</label>
+    {% endif %}
+    
+</body>
+
+</html>
