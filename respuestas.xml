@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="respuestas.xsl"?>
+<datos>
+    <pregunta1>Pizza</pregunta1>
+    <pregunta2>Azul</pregunta2>
+    <pregunta3>Senderismo en el bosque</pregunta3>
+    <pregunta4>Cafe</pregunta4>
+    <pregunta5>Destino?</pregunta5>
+    <pregunta6>Rock</pregunta6>
+    <pregunta7>Esperar en lugar de actuar</pregunta7>
+    <pregunta8>Acción</pregunta8>
+    <pregunta9>Invierno</pregunta9>
+    <pregunta10>Buen humor</pregunta10>
+</datos>
