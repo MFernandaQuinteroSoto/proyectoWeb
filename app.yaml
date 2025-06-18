@@ -1,5 +1,5 @@
 runtime: python312  # o python311 según tu versión
-entrypoint: gunicorn -b :$PORT app:app
+entrypoint: gunicorn -b :$PORT script:app
 
 handlers:
   - url: /.*
